@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+ ul{
+     list-style: none;
+ }
+
+ a{
+     text-decoration: none;
+     color: inherit;
+ }
+
+button {
+    padding: 10px 15px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 8px;
+    color: white;
+    background-color: #1d61dd;
+    cursor: pointer;
+}
+
+header {
+    height: calc(100vh - 150px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(imagens/imagem-header.jpg);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 30px;
+}
+ header nav p {
+     font-weight: 700;
+     font-size: 1.2rem;
+ }
+
+
+header nav ul {    
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header .conteudo-header {
+    max-width: 400px;
+    margin: 4rem auto;
+    text-align: center;
+}
+
+header .conteudo-header h1 {
+    font-size: 4rem;
+    margin: 10px 0;
+}
+
+header .conteudo-header p {
+    margin-bottom: 10px;
+}
+header button{
+    margin-top: 15px;
+}
+.pacotes {
+    background: #e8eaed;
+    padding: 15px;
+}
+
+.pacotes h1 {
+    text-align: center;
+    margin: 25px 0;
+    width: 100%;
+}
+
+.pacotes-card {
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin: auto;
+    max-width: 950px;
+    align-items: center;
+    justify-content: center;
+}
+
+.pacotes .card {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    background:white;
+    border-radius: 24px 0;
+    margin: 25px ;
+}
+
+.card .imagem-card {
+    width: 250px;
+    height: 200px;
+    border-radius: 24px 0 0 0;
+    object-fit: cover;
+}
+
+.conteudo-card {
+    padding: 0 15px;
+}
+
+.pacotes .conteudo-card h1 {
+    text-align: left;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.pacotes .conteudo-card ul {
+    display: flex;
+    flex-direction: column;
+    padding:0 ;
+
+}
+
+.pacotes .conteudo-card ul li {
+    font-size: 0.6rem;
+    display: flex;
+    align-items: center;
+    margin: 2px 0;
+    color: gray;
+    font-weight: bold;
+}
+
+.pacotes .conteudo-card li svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+
+.pacotes .conteudo-card li i {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.pacotes .card .card-tag-top {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    background: #F19B39;
+    border-radius: 8px 0 0 8px;
+    padding: 5px 10px;
+}
+
+.pacotes .card .card-tag p {
+    margin: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.pacotes .card .card-tag-bottom {
+    position: absolute;
+    left: 0;
+    top: 160px;
+    background: #1d61dd;
+    border-radius: 0 8px 8px 0;
+    padding: 5px 10px;
+}
+
+.servicos {
+    padding: 15px;
+}
+
+.servicos .servico-title {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.servicos .servicos-card {
+    display: flex;
+    justify-content: center;
+    max-width: 950px;
+    flex-wrap: wrap;
+    margin: 25px auto;
+}
+
+.servicos .card {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.servicos .card svg {
+    width: 60px;
+    height: 60px;
+    margin: 50px;
+    transition: 1s;
+}
+
+.servicos .card svg:hover {
+    stroke: #1d61dd;
+    transform: scale(1.1);
+}
+
+.servicos .card h3 {
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.servicos .card p {
+    color: gray;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.servicos .card .card-content {
+    text-align: center;
+    height: 180px;
+}
+
+.servicos button {
+    background: #1d61dd;
+}
+
+
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    
+    /* The width is the width of the web page */
+
+    margin-bottom: 5rem;
+  }
+
+.contato{
+    padding: 60px ;
+    background: #e8eaed;
+    position: relative;
+}
+
+.contato .contato-info{
+    
+    z-index: 99;
+    width: 350px;
+    height: 300px;
+    text-align: center;
+    border-radius: 8px;
+    position: absolute;
+    top: calc(50% - 150px);
+    left: calc(25% - 175px);
+    background: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+}
+
+.contato .contato-info h1{
+    
+    text-align: center;
+}
+
+.contato .contato-info li{
+    
+    font-size: 1rem;
+    font-weight: bold;
+    color: grey;
+    display: flex;
+    align-items: center;
+}
+
+.contato .contato-info li svg{
+    width: 16px;
+    margin: 10px;
+}
+
+
+
+/* Responsividade*/
+
+
+
+
+@media screen and (max-width: 950px) {
+    .contato{
+        padding: 60px 2%;
+    }
+
+    .contato .contato-info{
+    left: 10px;
+    padding: 0 2%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    
+    
+        .contato{
+            padding: 20px 1%;
+        }
+      
+        .contato .contato-info{
+            position: static;
+            margin: 40px auto;
+        }
+    }
+
+@media screen and (max-width: 767px) {}
+
+@media screen and (max-width: 576px) {
+    body {
+        height: calc(100vh - 55px);
+    }
+    header nav ul {
+        z-index: 999;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        font-weight: bold;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 55px;
+        width: 100%;
+        background-color: #89A7A7;
+        padding: 0;
+        margin: 0;
+    }
+ 
+    header nav div {
+        width: 100%;
+        text-align: center;
+    }
+    .pacotes-card {
+        flex-direction: column;
+    }
+
+ 
+}
+
+   
